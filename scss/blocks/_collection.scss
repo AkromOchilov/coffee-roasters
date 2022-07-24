@@ -1,0 +1,127 @@
+.collection__inner {
+	display: flex;
+	padding-top: 126px;
+	max-width: 1110px;
+	justify-content: center;
+	margin: 0 auto;
+	background-image: url(./../images/collection.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top;
+	margin-bottom: 180px;
+}
+
+.box__wrapper {
+	display: flex;
+	max-width: 1110px;
+	max-width: 100%;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.collection__box {
+	max-width: 255px;
+	text-align: center;
+	margin-bottom: 20px;
+	& + & {
+		margin-left: 30px;
+	}
+}
+
+.collection__image {
+	display: block;
+	margin-bottom: 71px;
+}
+
+.collection__heading {
+	margin: 0;
+	margin-bottom: 24px;
+	@include fraunces(900, 24px, 32px);
+	color: $dark-grey;
+}
+
+.collection__text {
+	margin: 0;
+	@include barlow(400, 16px, 26px);
+	color: $dark-grey;
+}
+
+@media only screen and (max-width: 768px) {
+	.collection__inner {
+		max-width: 670px;
+		margin-bottom: 200px;
+		padding: 0 58px;
+		padding-top: 59px;
+		background-image: url(./../images/tablet-collection-bg.png);
+	}
+
+	.box__wrapper {
+		flex-direction: column;
+	}
+
+	.collection__box {
+		display: flex;
+		margin-bottom: 0;
+		max-width: 573px;
+		align-items: center;
+		text-align: left;
+		& + & {
+			margin-left: 0;
+			margin-top: 32px;
+		}
+	}
+
+	.collection__heading {
+		@include fraunces(900, 24px, 32px);
+	}
+
+	.collection__text {
+		@include barlow(400, 15px, 25px);
+	}
+
+	.collection__image {
+		margin-bottom: 0;
+		margin-right: 36px;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+	.collection__inner {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.collection__image {
+		margin-right: 0px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.collection__inner {
+		padding-top: 85px;
+		margin-bottom: 120px;
+	}
+
+	.box__wrapper {
+		flex-direction: column;
+		margin: 0 auto;
+	}
+
+	.collection__box {
+		flex-direction: column;
+		text-align: center;
+		max-width: 282px;
+
+		& + & {
+			margin-top: 48px;
+		}
+	}
+
+	.collection__image {
+		margin-bottom: 24px;
+	}
+
+	.collection__heading {
+		margin-bottom: 16px;
+	}
+}

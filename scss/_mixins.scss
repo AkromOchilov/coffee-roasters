@@ -1,0 +1,49 @@
+@mixin barlow($weight: 400, $size: false, $height: false) {
+	font-family: 'Barlow';
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $height;
+}
+
+@mixin fraunces($weight: 400, $size: false, $height: false) {
+	font-weight: $weight;
+	font-size: $size;
+	line-height: $height;
+}
+
+@mixin btn {
+	min-width: 217px;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 0;
+	padding: 15px 31px;
+	color: $cream;
+	background-color: $cyan;
+	&:hover {
+		background-color: $cyan-hover;
+	}
+	&:active {
+		background-color: $cyan-active;
+	}
+}
+
+.btn {
+	min-width: 217px;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 25px;
+	padding: 0;
+	padding: 15px 31px;
+	color: $cream;
+	background-color: $cyan;
+	border-radius: 6px;
+	border: none;
+	cursor: pointer;
+	&:hover {
+		background-color: $cyan-hover;
+	}
+	&:active {
+		background-color: $cyan-active;
+	}
+}

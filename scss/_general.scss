@@ -7,14 +7,10 @@
 
 body {
 	margin: 0;
+	margin-top: 130px;
 	padding: 0;
 	font-family: 'Fraunces', 'Georgia', serif;
-}
-
-.container {
-	max-width: 1320px;
-	padding: 0 20px;
-	margin: 0 auto;
+	background-color: $cream;
 }
 
 .visually-hidden {
@@ -25,6 +21,12 @@ body {
 	position: absolute;
 	white-space: nowrap;
 	width: 1px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 a {

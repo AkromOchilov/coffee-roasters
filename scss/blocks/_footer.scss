@@ -1,0 +1,59 @@
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 47px 85px;
+	background-color: $f-color;
+}
+
+.footer__container {
+	display: flex;
+	align-items: center;
+}
+
+.footer__logo {
+	margin-right: 100px;
+}
+
+.footer__image {
+	display: block;
+}
+
+.footer__nav {
+	display: flex;
+	align-items: center;
+}
+
+.footer__link {
+	@include barlow(700, 12px, 15px);
+	letter-spacing: 0.92px;
+	text-transform: uppercase;
+	color: $grey;
+
+	& + & {
+		margin-left: 33px;
+	}
+	&:hover {
+		transition: all 0.5s linear;
+		color: $cream;
+	}
+}
+
+.socials__wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.socials__link {
+	& + & {
+		margin-left: 24px;
+	}
+}
+
+.socials__link:hover .socials__icon {
+	fill: orange;
+}
+
+.socials__icon {
+	display: block;
+}
